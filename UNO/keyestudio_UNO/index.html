@@ -1,0 +1,1071 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="En esta web vamos a encontrar contenidos que resultarán útiles para para iniciarnos en la placa Keyestudio UNO, una versión desarrollada por Keyestudio y distribuida para España por INNOVA DIDACTIC.">
+      
+      
+        <meta name="author" content="Federico Coca">
+      
+      
+        <link rel="canonical" href="https://fgcoca.github.io/Guia_fundamental_Keyestudio_UNO/UNO/keyestudio_UNO/">
+      
+      
+        <link rel="prev" href="../tira/">
+      
+      
+        <link rel="next" href="../../Miscelanea/about/">
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.5">
+    
+    
+      
+        <title>Retos Keyestudio UNO - Guía fundamental Keyestudio UNO</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6a10b989.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="deep-purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nivel-i-detector-de-movimiento" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Guía fundamental Keyestudio UNO" class="md-header__button md-logo" aria-label="Guía fundamental Keyestudio UNO" data-md-component="logo">
+      
+  <img src="../../img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guía fundamental Keyestudio UNO
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Retos Keyestudio UNO
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="deep-purple"  aria-label="Modo Oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo Oscuro" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="deep-purple"  aria-label="Modo Claro"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Modo Claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/fgcoca/Guia_fundamental_Keyestudio_UNO" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Guia_fundamental_Keyestudio_UNO
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Guía fundamental Keyestudio UNO" class="md-nav__button md-logo" aria-label="Guía fundamental Keyestudio UNO" data-md-component="logo">
+      
+  <img src="../../img/favicon.png" alt="logo">
+
+    </a>
+    Guía fundamental Keyestudio UNO
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/fgcoca/Guia_fundamental_Keyestudio_UNO" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Guia_fundamental_Keyestudio_UNO
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Keyestudio UNO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Keyestudio UNO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contUNO/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Antes de
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tdrsteam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Placa TdR-STEAM y keyestudio UNO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lcd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pantalla LCD 1602
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oled/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pantalla OLED
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../externos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programar sensores externos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programar servomotores
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ultrason/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programar el sensor de ultrasonidos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mando/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programar el mando a distancia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tira/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Programar una tira de LEDs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Retos Keyestudio UNO
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Retos Keyestudio UNO
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-i-detector-de-movimiento" class="md-nav__link">
+    NIVEL I. Detector de movimiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-ii-control-de-humedad" class="md-nav__link">
+    NIVEL II. Control de humedad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-iii-barrera-automatica" class="md-nav__link">
+    NIVEL III. Barrera automática
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-iv-contaminacion-acustica" class="md-nav__link">
+    NIVEL IV. Contaminación acústica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-v-trasvase-de-agua" class="md-nav__link">
+    NIVEL V. Trasvase de agua
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Miscelanea
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Miscelanea
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Miscelanea/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Autor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Miscelanea/lic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Licencias
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Miscelanea/soft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software utilizado
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-i-detector-de-movimiento" class="md-nav__link">
+    NIVEL I. Detector de movimiento
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-ii-control-de-humedad" class="md-nav__link">
+    NIVEL II. Control de humedad
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-iii-barrera-automatica" class="md-nav__link">
+    NIVEL III. Barrera automática
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-iv-contaminacion-acustica" class="md-nav__link">
+    NIVEL IV. Contaminación acústica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nivel-v-trasvase-de-agua" class="md-nav__link">
+    NIVEL V. Trasvase de agua
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Retos Keyestudio UNO</h1>
+
+<h2 id="nivel-i-detector-de-movimiento"><FONT COLOR=#8B008B><strong>NIVEL I. Detector de movimiento</strong></font><a class="headerlink" href="#nivel-i-detector-de-movimiento" title="Permanent link">&para;</a></h2>
+<p>En primer lugar, conecta la tira de <strong>leds Neopixel</strong> en uno de los <strong>pines GVS</strong>, por ejemplo el <strong>pin D2</strong>, de la placa <strong>Keyestudio UNO</strong> como en la siguiente imagen:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conexionUNO.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexionado tira leds en keyestudio UNO" src="../../img/retos/conexionUNO.png" /></a>  </p>
+<p></center></p>
+<p>Es necesario que el cable negro (GND) del sensor coincida con el pin negro (GND) de la placa Keyestudio UNO para que la conexión sea correcta.</p>
+<p>Para programar la tira de leds Neopixel, primero toma este bloque de programación de la categoría <strong>Visualización - Neopixel</strong></p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/iniciarGRB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque iniciar GRB..." src="../../img/retos/iniciarGRB.png" /></a>  </p>
+<p></center></p>
+<p>Colocalo dentro del bloque “Inicializar” e indica que hay 10 leds en la tira de leds Neopixel conectados al pin 2 de la placa Keyestudio UNO. El bloque “Inicializar” debería quedar así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_inicializar.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque Inicializar" src="../../img/retos/B_inicializar.png" /></a>  </p>
+<p></center></p>
+<p>Seguidamente, toma el bloque de programación condicional "si / si no" de la categoría <strong>“Lógica”</strong> y colócalo dentro del <strong>“bucle”</strong> principal. La estructura queda de la siguiente forma:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_bucle_ini.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque bucle con el bloque condicional" src="../../img/retos/B_bucle_ini.png" /></a>  </p>
+<p></center></p>
+<p>Hecho esto, conecta el <strong>sensor de movimiento PIR</strong> en uno de los <strong>pines GVS</strong>, por ejemplo el pin D8, de la placa <strong>Keyestudio UNO</strong> como en la siguiente imagen:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_PIR.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexión sensor PIR a keyestudio UNO" src="../../img/retos/conex_PIR.png" /></a>  </p>
+<p></center></p>
+<p>Coloca el bloque de programación <strong>“Detector de movimiento (PIR)”</strong> de la categoría "<strong>Sensores</strong>" en la condición del bloque condicional. Indica que el sensor “<strong>lectura del sensor de movimiento PIR</strong>” está conectado al <strong>pin 8</strong>. Colócalo dentro del bloque de programación condicional <strong>“sí”</strong> para que cuando el sensor detecte un movimiento se ejecute una acción. Y si no detecta ninguna, se ejecute otra.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_PIR.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="El Bloque Detector de movimiento (PIR) en el Bucle" src="../../img/retos/B_PIR.png" /></a>  </p>
+<p></center></p>
+<p>Por último, y para cada caso, coloca un bloque de programación <strong>“Contar con”</strong> de la categoría <strong>“Control”</strong> para que se pongan todos los leds de la tira de Neopixel de un mismo color. Cambia el nombre de la variable <strong>“i”</strong> del contador por <strong>LEDs”</strong> y colócala dentro del bloque de programación <strong>“Establecer pixel #”</strong>. Indica que el contador vaya del número 0 al 9 para que encienda los 10 leds de la tira de Neopixel.
+En caso de que se detecte movimiento, puedes programar que los leds Neopixel se enciendan de color rojo. Y si no se detecta, que se enciendan de color verde.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/contadores.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="El Bloque Bucle con los contadores" src="../../img/retos/contadores.png" /></a>  </p>
+<p></center></p>
+<p>Para que las luces se enciendan habrá que añadir el bloque "<strong>Mostrar</strong>" que encontraremos en la categoría <strong>Visualización - Neopixel</strong>. Lo añadiremos después de establecer de qué color queremos los pixels.</p>
+<p>El programa final quedará así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/NI_detector_mov.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="NIVEL I. Detector de movimiento" src="../../img/retos/NI_detector_mov.png" /></a><br />
+<em><a href="../programas/R_UNO_Detector_mov.abp">Descargar: NIVEL I. Detector de movimiento</a></em></p>
+<p></center></p>
+<h2 id="nivel-ii-control-de-humedad"><FONT COLOR=#8B008B><strong>NIVEL II. Control de humedad</strong></font><a class="headerlink" href="#nivel-ii-control-de-humedad" title="Permanent link">&para;</a></h2>
+<p>Lo primero de todo, crea una variable denominada <strong>Humedad</strong> desde el menú "<strong>Variables</strong>".</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/crear_var_humedad.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Creación de la variable Humedad" src="../../img/retos/crear_var_humedad.png" /></a>  </p>
+<p></center></p>
+<p>Coloca el bloque de programación "<strong>Establecer Humedad</strong>" de la categoría "<strong>Variables</strong>" dentro del bloque "<strong>Inicializar</strong>" para empezar el programa con un valor de la variable "0".</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/ini_var_humedad.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Inicializar la variable Humedad" src="../../img/retos/ini_var_humedad.png" /></a>  </p>
+<p></center></p>
+<p>Después, conecta el <strong>sensor de humedad</strong> a la Keyestudio UNO, por ejemplo en el <strong>pin A5</strong>, ya que es un <strong>sensor analógico</strong>, como en la siguiente imagen. Es necesario que el cable negro (GND) del sensor coincida con el pin negro (GND) de la placa para que la conexión sea correcta.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_sen_humedad.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexionado del sensor de humedad" src="../../img/retos/conex_sen_humedad.png" /></a>  </p>
+<p></center></p>
+<p>Y conecta la tira de <strong>leds Neopixel</strong> en uno de los <strong>pines GVS</strong>, por ejemplo el <strong>pin 4</strong>, de la placa <strong>Keyestudio UNO</strong> como en la siguiente imagen:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_tira.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexionado la tira de leds Neopixel" src="../../img/retos/conex_tira.png" /></a>  </p>
+<p></center></p>
+<p>Seguidamente, para iniciar la tira de leds Neopixel, configura los leds mediante este bloque de programación de la categoría <strong>Visualización - Neopixel</strong></p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/iniciarGRB.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque iniciar GRB..." src="../../img/retos/iniciarGRB.png" /></a>  </p>
+<p></center></p>
+<p>Colócalo dentro del bloque <strong>“Inicializar”</strong> e indica el número de leds Neopixel conectados al <strong>pin 4</strong> de la placa Keyestudio UNO tienen 10 leds. El bloque <strong>“Inicializar”</strong> debería quedar así tras los pasos dados:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_inicializar1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque inicializar" src="../../img/retos/B_inicializar1.png" /></a>  </p>
+<p></center></p>
+<p>Coloca dentro del "<strong>bucle</strong>" principal el bloque de la variable creada con el bloque de programación "<strong>Sonda de humedad</strong>" de la categoría "<strong>Sensores</strong>" indicando que está conectado al pin A5 y las unidades en %.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/asig_sonda_Humedad.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque establecer Humedad y bloque sonda de humedad" src="../../img/retos/asig_sonda_Humedad.png" /></a>  </p>
+<p></center></p>
+<p>Seguidamente, toma el bloque de programación condicional "si / si no" de la categoría <strong>“Lógica”</strong> y colócalo dentro del <strong>“bucle”</strong> principal. La estructura queda de la siguiente forma:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_bucle_ini.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque bucle con el bloque condicional" src="../../img/retos/B_bucle_ini.png" /></a>  </p>
+<p></center></p>
+<p>Pulsa en el símbolo “+” para crear más condiciones:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_condicional_mas.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Ampliación del bloque condicional" src="../../img/retos/B_condicional_mas.png" /></a>  </p>
+<p></center></p>
+<p>Después, coloca un bloque de comparación y el bloque booleano “y” de la categoría "<strong>Lógica</strong>" en la condición "<strong>si</strong>" y "<strong>si no, si</strong>" respectivamente. Uno de los elementos de la comparación debe ser el bloque del valor de la variable <strong>“Humedad”</strong> y el otro, <strong>los valores de la humedad</strong> que queramos establecer, por ejemplo “30” y “60”. De esta forma, define el límite inferior (30), el límite superior (60) y el rango intermedio (entre 30 y 60).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_compara_y.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque lógico y de comparación" src="../../img/retos/B_compara_y.png" /></a>  </p>
+<p></center></p>
+<p>Por último, y para cada caso, coloca un bloque de programación “<strong>Contar con</strong>” de la categoría <strong>“Control”</strong> para que se pongan todos los leds de la <strong>tira de Neopixel</strong> de un mismo color. Cambia el nombre de la variable “i” del contador por <strong>“LEDs”</strong> y colócala dentro del bloque de programación “<strong>Establecer pixel #</strong>”. Indica que el contador vaya del número 0 al 7 para que encienda 8 leds de la tira de Neopixel.</p>
+<p>Para que las luces se enciendan habrá que añadir el bloque “Mostrar” que encontraremos en la categoría <strong>Visualización - Neopixel</strong>. Lo añadiremos después de establecer de qué color queremos los pixels.</p>
+<p>El bloque condicional debe quedar así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_condicional.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque condicional" src="../../img/retos/B_condicional.png" /></a>  </p>
+<p></center></p>
+<p>Por último, y para dar tiempo a la lectura del sensor, añade una pausa con el bloque de programación “<strong>Esperar (ms)</strong>”.</p>
+<p>Ten en cuenta que el valor que debes escribir en este bloque indica un valor de tiempo con unidades en milisegundos. Por tanto, si queremos indicar una pausa de 1 segundo, es necesario escribir un valor de 1000 en el mismo.</p>
+<p>El programa completo queda así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/NII_control_humedad.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="NIVEL II. Control de humedad" src="../../img/retos/NII_control_humedad.png" /></a><br />
+<em><a href="../programas/R_UNO_Detector_mov.abp">Descargar: NIVEL II. Control de humedad</a></em></p>
+<p></center></p>
+<h2 id="nivel-iii-barrera-automatica"><FONT COLOR=#8B008B><strong>NIVEL III. Barrera automática</strong></font><a class="headerlink" href="#nivel-iii-barrera-automatica" title="Permanent link">&para;</a></h2>
+<p>En este reto, crea un programa que levante una barrera accionada por el servomotor en función de si detecta o no un objeto a cierta distancia en centímetros gracias al sensor de ultrasonidos.</p>
+<p>Utiliza los siguientes bloques de programación para realizar este reto:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/bloques.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloques a utilizar" src="../../img/retos/bloques.png" /></a>  </p>
+<p></center></p>
+<p><mark><strong>POSIBLE SOLUCIÓN</strong></mark></p>
+<p>El primer paso que debes dar es conectar el sensor de ultrasonidos a la <strong>Keyestudio UNO</strong>. Este sensor tiene <strong>cuatro cables de conexión</strong>: uno de tierra GND, otro de voltaje VCC y dos de señal (Trig y Echo). Por tanto, debes realizar la conexión a la Keyestudio UNO formando una “L”, tal y como se indica en la imagen. Indica cm como unidades de la lectura de distancia y los pines de señal donde hayas conectado los cables de Trig (emisor) y Echo (receptor) en el bloque de programación del sensor de ultrasonidos. Puedes conectarlos a los pines 2 y 3, por ejemplo, de la hilera de pines GVS como en la siguiente imagen:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_ultra.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexionado sensor ultrasonidos" src="../../img/retos/conex_ultra.png" /></a>  </p>
+<p></center></p>
+<p>También conecta el <strong>servomotor</strong> en uno de los pines GVS de la hilera de conexiones de la Keyestudio UNO, por ejemplo el <strong>pin 4</strong>.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_servo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexionado servomotor" src="../../img/retos/conex_servo.png" /></a>  </p>
+<p></center></p>
+<p>Preparados los componentes, es hora de realizar el programa. Dentro del "<strong>bucle</strong>" principal coloca el bloque de programación "<strong>si hacer</strong>". Dentro de este condicional, añade el bloque de comparación de la categoría <strong>lógica</strong>. Uno de los elementos de la comparación debe ser el bloque de lectura del sensor de ultrasonidos ya configurado y el otro, el valor de la distancia, que en este caso puede ser de <strong>10 centímetros</strong>, para detectar cuándo un objeto está cerca de la barrera. El bloque para escribir un valor numérico se encuentra dentro de la categoría <strong>“Matemáticas”</strong>. El programa en este punto debería estar así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/establecer_condicion.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Establecer la condición" src="../../img/retos/establecer_condicion.png" /></a>  </p>
+<p></center></p>
+<p>A continuación, de la categoría “<strong>Motor - Servo</strong>” selecciona el bloque de programación <strong>“Servo”</strong>. Colócalo dentro del bloque condicional “si” para que cuando se detecte una distancia menor de 10 centímetros el servomotor haga un movimiento. Por ejemplo, programa que se mueva primero en la <strong>posición angular 90º</strong>. Indica que has conectado el servomotor al <strong>pin 4</strong>.</p>
+<p>En este momento el programa debería estar así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/bloque_servo.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Configuración bloque Servo" src="../../img/retos/bloque_servo.png" /></a>  </p>
+<p></center></p>
+<p>Sin embargo, es necesario <strong>devolver al servomotor a su posición inicial</strong>, por lo que hay que añadir el bloque <strong>“Esperar”</strong>. Decide cuál es el tiempo óptimo a "esperar", normalmente se toma 1.000 milisegundos (1 segundo). Seguidamente, añade el bloque del servomotor que lo devuelve a su posición inicial. Por tanto, el programa del bucle principal queda de la siguiente manera:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/bloque_principal.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque principal completo" src="../../img/retos/bloque_principal.png" /></a>  </p>
+<p></center></p>
+<p>Para asegurar que el servomotor realice un movimiento de forma correcta, es necesario “reinicializarlo” al iniciar el programa. Por eso, en el bloque <strong>“Inicializar”</strong>, coloca el bloque de programación del <strong>servomotor</strong> para que se inicie en la <strong>posición 0º</strong>.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/bloque_inicializar.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque Inicializar" src="../../img/retos/bloque_inicializar.png" /></a>  </p>
+<p></center></p>
+<p>El programa completo de este reto queda así:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/NIII_barrera.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="NIVEL III. Barrera automática" src="../../img/retos/NIII_barrera.png" /></a><br />
+<em><a href="../programas/R_UNO_Barrera_automatica.abp">Descargar: NIVEL III. Barrera automática</a></em></p>
+<p></center></p>
+<h2 id="nivel-iv-contaminacion-acustica"><FONT COLOR=#8B008B><strong>NIVEL IV. Contaminación acústica</strong></font><a class="headerlink" href="#nivel-iv-contaminacion-acustica" title="Permanent link">&para;</a></h2>
+<p>Crea un programa capaz de emitir una alerta cuando detecte un nivel de sonido excesivo mediante el sensor de sonido, un LED verde y un LED rojo.</p>
+<p>Para empezar, conecta el sensor de sonido analógico a uno de los pines A0-A5 de la placa Keyestudio UNO. Por ejemplo, puedes conectar el cable GVS al pin A0. Es necesario que el cable negro (GND) del sensor de sonido coincida con el pin azul (GND) de la placa Keyestudio UNO.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_micro.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexión micrófono" src="../../img/retos/conex_micro.png" /></a>  </p>
+<p></center></p>
+<p>Conecta los leds a la hilera de pines de entradas y salidas digitales GVS. Por ejemplo, conecta los cables GVS del LED rojo en el pin P0 y el LED verde en el pin P1. Comprueba que el cable negro (GND) del LED coincida con el pin azul (GND) de la placa Keyestudio UNO.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conex_leds.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexión leds" src="../../img/retos/conex_leds.png" /></a>  </p>
+<p></center></p>
+<p>Inicia un nuevo programa en steamakerblocks añadiendo el bloque de programación condicional "<strong>si / hacer / si no</strong>" que encontrarás en la categoría de "<strong>Lógica</strong>". Como el objetivo es que este condicional funcione en todo momento, deberás introducirlo dentro del bloque <strong>“Bucle”</strong> que aparece al iniciar un proyecto:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_si_hacer_sino.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque si /hacer / si no en el Bucle" src="../../img/retos/B_si_hacer_sino.png" /></a>  </p>
+<p></center></p>
+<p>A continuación, debes introducir un comparador para medir el nivel de sonido del sensor y compararlo con un valor determinado, que será el valor umbral. En la categoría <strong>“Lógica”</strong> arrastra el bloque de comparación de valores numéricos en el lado derecho del <strong>“sí”</strong> y cambia el símbolo “<strong>=</strong>” (igual) por el de “<strong>&lt;</strong>” (menor que).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_si_hacer_sino_comp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque si /hacer / si no con comparador" src="../../img/retos/B_si_hacer_sino_comp.png" /></a>  </p>
+<p></center></p>
+<p>En <strong>“Sensores”</strong> arrastra el bloque “<strong>Nivel de sonido Pin A0 %</strong>” y sitúalo en el primer espacio del comparador. Despliega el campo donde aparece el porcentaje para dejarlo en de "0..1023".</p>
+<p>En <strong>“Matemáticas”</strong> arrastra un bloque para añadir un número y sitúalo después del símbolo “&lt;” (menor que) del comparador. Cambia el valor <strong>“0”</strong> por <strong>“700”</strong>, como ejemplo de umbral que determinemos (el sensor de sonido analógico proporciona valores entre 0 y 1023).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_si_hacer_sino_comp_C.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque si /hacer / si no con comparador completado" src="../../img/retos/B_si_hacer_sino_comp_C.png" /></a>  </p>
+<p></center></p>
+<p>Ahora define el comportamiento de los leds. Arrastra el bloque "<strong>Led Pin 2 Estado ON</strong>" que encontrarás en "<strong>Actuadores</strong>" y sitúalo en el lado derecho de "<strong>hacer</strong>". Duplícalo, o arrastra de nuevo el bloque, y encajalo debajo del anterior. Para encender el LED verde y apagar el LED rojo (el valor del sensor no supera el umbral) deberás poner el pin 2 en “<strong>Estado OFF</strong>” y el pin 3 en “<strong>Estado ON</strong>” en cada uno de los bloques dentro de <strong>“hacer”</strong>.</p>
+<p>Duplica de nuevo los bloques y sitúalos en el lado derecho del “<strong>si no</strong>”. Cambia los estados de los pines: ahora el LED rojo (pin 2) estará encendido (<strong>“ON”</strong>) cuando el nivel de sonido supere el valor umbral y el LED verde (pin 3) estará apagado (<strong>“OFF”</strong>).</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/IV_Cont_acustica.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="NIVEL IV. Contaminación acústica" src="../../img/retos/IV_Cont_acustica.png" /></a><br />
+<em><a href="../programas/R_UNO_Contaminacion_acustica.abp">Descargar: NIVEL IV. Contaminación acústica</a></em></p>
+<p></center></p>
+<h2 id="nivel-v-trasvase-de-agua"><FONT COLOR=#8B008B><strong>NIVEL V. Trasvase de agua</strong></font><a class="headerlink" href="#nivel-v-trasvase-de-agua" title="Permanent link">&para;</a></h2>
+<p>Consigue trasvasar agua de un vaso a otro mediante la bomba de agua y el relé utilizando un pulsador.</p>
+<p>Antes de empezar a programar es esencial que conectes adecuadamente el pulsador, el relé y la bomba de agua con la placa Keyestudio UNO.</p>
+<p>Primero, conecta el pulsador a la placa Keyestudio UNO mediante los pines GVS de la hilera de conexiones. Puedes utilizar, por ejemplo, el pin 2. Luego conecta el relé a la placa en la misma hilera. Puedes conectarlo al siguiente pin, el pin 3, por ejemplo. Comprueba que el cable negro (GND) del relé coincida con el pin azul (GND) de la Keyestudio UNO para garantizar una conexión correcta.</p>
+<p>A continuación conecta uno de los cables de la bomba de agua a un pin GND de la placa Keyestudio UNO. El otro cable de la bomba debes conectarlo al conector central de salida del relé. Para finalizar, quita el cabezal de plástico de un extremo de un cable hembra-hembra y conéctalo desde el conector de salida del relé hasta un pin VCC de la placa Keyestudio UNO. Esto dejará el circuito en abierto y permitirá que, al activarse el relé, el circuito se cierre y, en consecuencia, la bomba se active.</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/conexiones_trasvase.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Conexiones para trasvase de agua" src="../../img/retos/conexiones_trasvase.png" /></a>  </p>
+<p></center></p>
+<p>Inicia un nuevo programa en steamakerblocks añadiendo el bloque de programación condicional "<strong>si / hacer / si no</strong>" que encontrarás en la categoría de "<strong>Lógica</strong>". Como el objetivo es que este condicional funcione en todo momento, deberás introducirlo dentro del bloque <strong>“Bucle”</strong> que aparece al iniciar un proyecto:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/B_si_hacer_sino.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Bloque si /hacer / si no en el Bucle" src="../../img/retos/B_si_hacer_sino.png" /></a>  </p>
+<p></center></p>
+<p>A continuación, debes introducir la condición a evaluar para ejecutar una acción u otra, que en este caso consiste en que si el pulsador está pulsado, se activa el relé y, por tanto, se pone en funcionamiento la bomba de agua, y si no lo está, no funciona. Encontrarás este bloque en el apartado <strong>“Sensores”</strong> con el nombre de <strong>“Pulsador”</strong>. Tienes que colocarlo en el conector justo al lado del <strong>“si”</strong>, y el programa quedará configurado de la siguiente manera:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/condicion_establecida.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Condición establecida" src="../../img/retos/condicion_establecida.png" /></a>  </p>
+<p></center></p>
+<p>En este punto falta definir, por un lado, qué pasará cuando se pulse el pulsador, y por otro, qué pasará cuando se deje de pulsar. Toma el bloque de programación para controlar el relé de la categoría <strong>“Actuadores”</strong>, colócalo en cada caso del condicional. Indica que el relé está conectado al pin 3 y que si el pulsador está pulsado, el estado del relé debe estar en <strong>“ON”</strong>, y si no lo está, en <strong>“OFF”</strong>.</p>
+<p>El programa quedará configurado de la siguiente forma:</p>
+<p><center></p>
+<p><a class="glightbox" href="../../img/retos/V_Trasvase_agua.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="NIVEL V. Trasvase de agua" src="../../img/retos/V_Trasvase_agua.png" /></a><br />
+<em><a href="../programas/R_UNO_Trasvase_agua.abp">Descargar: NIVEL V. Trasvase de agua</a></em></p>
+<p></center></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; Copyright y copia; 2025 Federico Coca – <a href="#consent">Cambiar configuración de cookies</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4>Consentimiento de cookies</h4>
+<p>Se utilizan cookies para reconocer las visitas repetidas y sus preferencias, así como para medir la eficacia de nuestra documentación y si los usuarios encuentran lo que buscan. Al aceptar, nos ayuda a mejorar nuestra documentación.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Aceptar</button>
+    
+    
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Rechazar</button>
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestionar cookies</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="../../plugins/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
