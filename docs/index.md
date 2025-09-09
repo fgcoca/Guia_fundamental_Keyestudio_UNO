@@ -3,6 +3,8 @@ En esta web vamos a encontrar contenidos que resultarán útiles para para inici
 
 <center>
 
-![Placa Imagina TdR STEAM](./img/TdR/placa_TdR.png)  
+![Placa Keyestudio UNO con conector de 3 pines](./img/uno/placa_UNO.png)  
+
+![Placa Keyestudio UNO R3](./img/uno/uno.png)
 
 </center>

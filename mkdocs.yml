@@ -46,7 +46,17 @@ extra:
 # 4. Navegación
 nav:
   - Introducción: index.md
-  
+  - Keyestudio UNO:
+    - Antes de: UNO/contUNO.md
+    - Placa TdR-STEAM y keyestudio UNO: UNO/tdrsteam.md
+    - Pantalla LCD 1602: UNO/lcd.md
+    - Pantalla OLED: UNO/oled.md
+    - Programar sensores externos: UNO/externos.md
+    - Programar servomotores: UNO/servos.md
+    - Programar el sensor de ultrasonidos: UNO/ultrason.md
+    - Programar el mando a distancia: UNO/mando.md
+    - Programar una tira de LEDs: UNO/tira.md
+    - Retos Keyestudio UNO: UNO/keyestudio_UNO.md
 
 
 #- Ayuda:
