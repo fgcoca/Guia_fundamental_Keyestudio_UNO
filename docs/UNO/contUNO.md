@@ -2,11 +2,7 @@ comenzar a utilizar la placa Keyestudio UNO, tienes que comprobar que tu ordenad
 
 ## <FONT COLOR=#007575>**Descripción**</font>
 
-
-
 ![Placa Keyestudio UNO con conector de 3 pines](../img/uno/placa_UNO.png)  
-
-
 
 La placa Keyestudio UNO es una placa basada en el microcontrolador ATmega328P, con la diferencia sobre la versión estándar, de que incorpora una interfaz de tres pines (GND, VCC, Señal) para cada una de las entradas y salidas de la placa. Esto facilita enormemente la conexión de sensores y actuadores sin la necesidad de utilizar una protoboard.
 
@@ -22,12 +18,7 @@ Esta placa puede programarse mediante diversas plataformas y lenguajes, como Ard
 
 ## <FONT COLOR=#007575>**Componentes de la placa**</font>
 
-
-
 ![Componentes de la placa Keyestudio UNO con conector de 3 pines](../img/uno/comp_placa_UNO.png)  
-*Componentes de la placa Keyestudio UNO con conector de 3 pines*
-
-
 
 1. **Conector ICSP (In-Circuit Serial Programming)**. ICSP consta de MOSI, MISO, SCK, RESET, VCC y GND para programar el firmware para ATMEGA 16U2-MU. Este circuito integrado USB a chip, puede convertir la señal USB en señal de puerto serie.
 2. **Conector USB-B**. Puedes alimentar la placa a través de la conexión USB o bien puedes cargar los programas a la placa a través del puerto USB. Conecta la placa al PC mediante un cable USB a través del puerto USB.
@@ -71,15 +62,20 @@ Empleando un zumbador se pueden generar tonos y melodías que puedan formar part
 ### <FONT COLOR=#AA0000>Arduinoblocks</font>
 ArduinoBlocks [http://www.arduinoblocks.com](http://www.arduinoblocks.com/) es un entorno de programación visual por bloques que facilita la programación de la placa.
 
+!!! Question ""
+    !!! Danger ""
+        !!! Info "Cambio de denominación"
+            Desde el día uno de julio de 2025 la plataforma de programación pasa a denominarse STEAMakersBlocks con el siguiente logotipo:
+            
+            ![Logo STEAMakersBlocks](../img/uno/steamakersblockslogo.png){.center-img50}
+            
+            El enlace [http://www.arduinoblocks.com](http://www.arduinoblocks.com/) queda automáticamente redirigido a [STEAMakersBlocks](https://www.steamakersblocks.com/).
+
+            A partir de ese momento, donde encontremos la palabra ArduinoBlocks debemos entender que se trata de STEAMakersBlocks.
+
 ArduinoBlocks es compatible con varias placas electrónicas, entre ellas la placa Keyestudio UNO. En su entorno de programación o IDE se pueden distinguir las siguientes partes:
 
-
-
 ![Entorno de programación o IDE de arduinoblocks](../img/uno/IDE_AB.png)  
-*Entorno de programación o IDE de arduinoblocks*
-
-
-
 
 
 <font size="1">
